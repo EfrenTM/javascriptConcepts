@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Funciones de flecha</title>
+</head>
+
+<body>
+    <h1 id="saludo"></h1>
+    <h1 id="suma">Resultado de la suma es: </h1>
+    
+    <script>
+        var saludosId = document.getElementById('saludo');
+        var sumasId = document.getElementById('suma');
+
+        //Funcion que retorna hola mas una varible concatenada al string.
+
+         function saludar(nombre ) {
+
+             return 'Hola ' + nombre; 
+
+         }
+
+        // Funcion que devuelve el mismo contenido en un sola linea.
+        // Se forma:  variable con nombre de la función = parámetros que va a recibir => resultado de esa función.
+        var saludar = nombre => "Hola " + nombre;
+        // Función de flecha sin parámetros.
+        var saludo = () => "Hola ";
+        //Funcion arrow con dos parametros.
+        var suma = (suma1, suma2)  => suma1 + suma2;
+        //Funcion arrow con tres parametros uno como var dentro de la funcion.
+        var suma = (suma1, suma2)  => {
+            var suma3 = 10;
+            return suma1 + suma2 + suma3;
+        }
+        saludosId.innerHTML = saludar("Efren");
+        saludosId.innerHTML = saludo();
+        sumasId.innerHTML += suma(10,20);      
+    </script>
+</body>
+
+</html>

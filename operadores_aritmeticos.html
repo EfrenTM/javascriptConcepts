@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Operadores aritmeticos</title>
+</head>
+
+<body>
+    <h1 id="operadores"></h1>
+
+    <script>
+        var saludosId = document.getElementById("operadores");
+
+         function Operadores( ) {
+
+              var suma = 4 + 5;
+              var resta = 4 - 5;
+              var divicion = 4 / 5;
+             var multiplicacion = 4 * 5;
+            
+             let operacion ='Suma '+ suma + '<br/> Resta ' + resta + '<br/> Division ' + divicion + '<br/> Multiplicacion ' + multiplicacion + '<br/>' ;
+
+             return operacion;
+
+         }
+
+        saludosId.innerHTML = Operadores();
+
+    </script>
+</body>
+
+</html>
